@@ -7,14 +7,14 @@ describe ('renderer', function(){
 	var expect = chai.expect;
 	var templateString = "Hi {{fname}} {{sname}}, This is the good.";
     
-    describe('succeeds', function(){
+    describe('succeeds when', function(){
     	var templateRenderer = null;
   		
   		before(function(){
 			templateRenderer = renderer(templateString, {fname: 'G'});
 		});
 
-		describe('when no data provided', function(){
+		describe('no data provided', function(){
 			var resultHtml = null;
 			before(function(){
 				resultHtml = templateRenderer({sname: 'Gajjar'});
@@ -25,7 +25,7 @@ describe ('renderer', function(){
 			});
 		});
 
-		describe('uses data provided', function(){
+		describe('data is provided', function(){
 			var resultHtml = null;
 			before(function(){
 				resultHtml = templateRenderer({fname: 'Gaurav', sname: 'Gajjar'});
@@ -36,4 +36,10 @@ describe ('renderer', function(){
 			});
 		});
     });
+
+    describe('fails when', function(){
+    	it('initialize without templateString', function(){
+			expect(renderer).to.throw('templateString parameter is required');
+		});
+	});
 });
