@@ -4,7 +4,7 @@
   "description": "It's a swig renderer for gitup-mailer (https://github.com/ifraixedes/gitup-mailer)",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/gajjargaurav/gitup-mailer-renderer-swig",
   "dependencies": {
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
   }
 }
