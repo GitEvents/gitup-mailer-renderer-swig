@@ -1,0 +1,19 @@
+{
+  "name": "gitup-mailer-renderer-swig",
+  "version": "0.0.1",
+  "description": "It's a swig renderer for gitup-mailer (https://github.com/ifraixedes/gitup-mailer)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajjargaurav/gitup-mailer-renderer-swig.git"
+  },
+  "author": "Gaurav Gajjar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gajjargaurav/gitup-mailer-renderer-swig/issues"
+  },
+  "homepage": "https://github.com/gajjargaurav/gitup-mailer-renderer-swig"
+}
